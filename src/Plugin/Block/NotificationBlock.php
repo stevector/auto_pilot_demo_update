@@ -22,14 +22,14 @@ class NotificationBlock extends BlockBase {
   public function build() {
 
     // Add some custom markup.
-    $content = $this->t('Check out our latest blog posts for the latest news!');
+    $content = $this->t('Thank you for reading Umami! ');
     $markup = "<div class='container'>$content</div>";
 
     return [
       '#markup' => $markup,
       '#attached' => [
         'library' => [
-          'pantheon_autopilot_demo/style.block',
+          'autopilot_demo_update/style.block',
         ]
       ],
     ];
